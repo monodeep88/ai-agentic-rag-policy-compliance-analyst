@@ -1,0 +1,139 @@
+{
+  "mode": "ai",
+  "project_title": "Policy Compliance Analyst",
+  "short_description": "AI-powered Policy Compliance Analyst for identifying and mitigating regulatory risks",
+  "domain_summary": "{'description': 'The Policy Compliance Analyst is designed to assist organizations in identifying and mitigating regulatory risks by analyzing policies, procedures, and regulatory requirements.', 'keywords': ['Policy Compliance', 'Regulatory Risk', 'Risk Management']}",
+  "user_persona": "Risk Management Specialist: A professional responsible for identifying and mitigating regulatory risks within an organization.",
+  "architecture_notes": [
+    "The architecture is designed to be scalable, secure, and maintainable."
+  ],
+  "backend_modules": [
+    "Policy Parser: Module responsible for parsing policies and procedures",
+    "Regulatory Database: Module responsible for storing and retrieving regulatory requirements",
+    "Risk Assessment Engine: Module responsible for assessing regulatory risks"
+  ],
+  "frontend_features": [
+    "Policy Upload: Feature allowing users to upload policies and procedures",
+    "Regulatory Requirements Display: Feature displaying regulatory requirements",
+    "Risk Assessment Results: Feature displaying risk assessment results"
+  ],
+  "data_sources": [
+    "Policy Database: Database storing policies and procedures",
+    "Regulatory Database: Database storing regulatory requirements"
+  ],
+  "testing_strategy": [
+    "The testing strategy involves unit testing, integration testing, and end-to-end testing."
+  ],
+  "starter_questions": [
+    "{'question': 'What are the regulatory requirements for our organization?', 'answer': 'The regulatory requirements can be found in the Regulatory Database module.'}",
+    "{'question': 'How do I upload a policy?', 'answer': 'You can upload a policy using the Policy Upload feature on the frontend.'}"
+  ],
+  "workflow_steps": [
+    "Upload Policy: User uploads a policy and procedure",
+    "Assess Regulatory Risks: Risk Assessment Engine assesses regulatory risks",
+    "Display Results: Risk Assessment Results feature displays risk assessment results"
+  ],
+  "business_rules": [
+    "Risk Assessment Engine assesses regulatory risks when a policy is uploaded",
+    "Risk Assessment Results feature displays risk assessment results when regulatory risks are identified"
+  ],
+  "sample_documents": [
+    {
+      "filename": "policy_example.pdf",
+      "content": "This is an example policy document."
+    },
+    {
+      "filename": "regulatory_requirements.txt",
+      "content": "This is an example of regulatory requirements."
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "FastAPI",
+      "description": "A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints."
+    },
+    {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces."
+    },
+    {
+      "name": "Docker",
+      "description": "A containerization platform for building, shipping, and running distributed applications."
+    }
+  ],
+  "agent_plan": [
+    {
+      "name": "Architecture Agent",
+      "role": "Define app boundaries, data flow, runtime stack, and integration points.",
+      "outputs": [
+        "The architecture is designed to be scalable, secure, and maintainable."
+      ]
+    },
+    {
+      "name": "Backend Agent",
+      "role": "Design FastAPI modules, service contracts, validation, and error handling.",
+      "outputs": [
+        "Policy Parser: Module responsible for parsing policies and procedures",
+        "Regulatory Database: Module responsible for storing and retrieving regulatory requirements",
+        "Risk Assessment Engine: Module responsible for assessing regulatory risks"
+      ]
+    },
+    {
+      "name": "Frontend Agent",
+      "role": "Design React screens, state flow, controls, and user feedback states.",
+      "outputs": [
+        "Policy Upload: Feature allowing users to upload policies and procedures",
+        "Regulatory Requirements Display: Feature displaying regulatory requirements",
+        "Risk Assessment Results: Feature displaying risk assessment results"
+      ]
+    },
+    {
+      "name": "Database Agent",
+      "role": "Design persistence models, sample data, indexes, and audit records.",
+      "outputs": [
+        "Run history",
+        "Source document metadata",
+        "Generated workflow audit records"
+      ]
+    },
+    {
+      "name": "Testing Agent",
+      "role": "Define contract tests, smoke tests, and generated project validation.",
+      "outputs": [
+        "The testing strategy involves unit testing, integration testing, and end-to-end testing."
+      ]
+    },
+    {
+      "name": "DevOps Agent",
+      "role": "Define environment variables, Docker workflow, and repository packaging.",
+      "outputs": [
+        "Docker-ready project",
+        "Environment sample file",
+        "GitHub repository upload"
+      ]
+    },
+    {
+      "name": "Reviewer Agent",
+      "role": "Review the generated plan for completeness, security, and portfolio quality.",
+      "outputs": [
+        "Upload Policy: User uploads a policy and procedure",
+        "Assess Regulatory Risks: Risk Assessment Engine assesses regulatory risks",
+        "Display Results: Risk Assessment Results feature displays risk assessment results"
+      ]
+    }
+  ],
+  "model_provider": "groq",
+  "model_name": "llama-3.1-8b-instant",
+  "fallback_reason": null,
+  "architecture": "Policy Compliance Analyst",
+  "architecture_template_id": 12,
+  "architecture_template_path": "templates/agentic-rag/policy-compliance-analyst",
+  "architecture_description": "Policy Compliance Analyst for policy adherence review.",
+  "validation_pipeline": [
+    "pytest",
+    "npm install",
+    "npm run build",
+    "docker compose config",
+    "docker compose build"
+  ]
+}
